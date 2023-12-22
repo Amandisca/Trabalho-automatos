@@ -8,6 +8,8 @@ class Automato:
         #transições q0
         if self.estado_atual == 'q0' and simbolo == 'a':
             self.estado_atual = 'q1'
+        if self.estado_atual == 'q0' and simbolo == 'b':
+            self.estado_atual = 'q2'
 
         #transições q1
         elif self.estado_atual == 'q1' and simbolo == 'a':
